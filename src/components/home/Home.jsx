@@ -3,16 +3,20 @@ import Header from '../commom/Header'
 import MainHeader from '../layout/MainHeader'
 import HotelService from '../commom/HotelService'
 import Parallax from '../commom/Parallax'
+import RoomCarousel from '../commom/RoomCarousel'
 
 const Home = () => {
   return (
     <section>
         <MainHeader/>
-        <section className='container'>
+        <div className='container'>
+          <RoomCarousel/>
           <Parallax/>
+          <RoomCarousel/>
           <HotelService/>
           <Parallax/>
-        </section>
+          <RoomCarousel/>
+        </div>
         
     </section>
   )
